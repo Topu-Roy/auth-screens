@@ -6,8 +6,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { SignInFormFields } from "@/assets/formFields";
 import { FormInput } from "@/components/FormInput";
 import LogoSVG from "@/assets/logo";
+import { useToast } from "@/hooks/use-toast";
 
 export default function SignInForm() {
+  const { toast } = useToast();
+
   const {
     register,
     handleSubmit,
@@ -21,7 +24,15 @@ export default function SignInForm() {
   });
 
   const onSubmit = (data: SignInSchemaType) => {
-    console.log(data);
+    toast({
+      className: "bg-slate-950 border-0",
+      title: "You submitted the following values:",
+      description: (
+        <pre className="mt-2 w-[340px] rounded-md bg-gray-800 p-4">
+          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+        </pre>
+      ),
+    });
   };
 
   return (
