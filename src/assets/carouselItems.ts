@@ -1,6 +1,6 @@
-import ImageOne from "@/assets/doctor-examining-patient-clinic-illustrated.png";
-import ImageTwo from "@/assets/group-medical-staff-carrying-health-related-icons.png";
-import ImageThree from "@/assets/scientists-working-concept.png";
+import ImageOne from "@/assets/images/doctor-examining-patient-clinic-illustrated.png";
+import ImageTwo from "@/assets/images/group-medical-staff-carrying-health-related-icons.png";
+import ImageThree from "@/assets/images/scientists-working-concept.png";
 
 export const CarouselItems = [
   {

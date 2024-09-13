@@ -1,8 +1,5 @@
 import { z } from "zod";
 
-/**
- * Schema for validating SignUp form data.
- */
 export const SignUpSchema = z.object({
   name: z
     .string()
@@ -22,8 +19,13 @@ export const SignUpSchema = z.object({
 export type SignUpSchemaType = z.infer<typeof SignUpSchema>;
 
 export const SignInSchema = z.object({
-  email: z.string().min(2).email(),
-  password: z.string().min(4),
+  email: z
+    .string()
+    .min(2, { message: "Email is required." })
+    .email({ message: "Invalid email address." }),
+  password: z
+    .string()
+    .min(4, { message: "Password must be at least 4 characters long." }),
 });
 
 export type SignInSchemaType = z.infer<typeof SignInSchema>;
