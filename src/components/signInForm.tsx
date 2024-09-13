@@ -32,9 +32,9 @@ export default function SignInForm() {
       <div className="translate-x-[3.1rem] scale-125 pb-5">
         <LogoSVG />
       </div>
-      <h2 className="text-3xl font-bold">Create your account</h2>
+      <h2 className="text-3xl font-bold">Get Started</h2>
       <p className="pb-3 text-sm font-semibold text-black/60">
-        Enter your details to create your account
+        Welcome back, Enter your credentials to sign in
       </p>
 
       <div className="space-y-3 pb-3">
