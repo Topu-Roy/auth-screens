@@ -1,3 +1,5 @@
+"use client"
+
 import { cn } from "@/lib/utils";
 import type { HTMLInputTypeAttribute } from "react";
 import type { FieldValues, Path, UseFormRegister } from "react-hook-form";

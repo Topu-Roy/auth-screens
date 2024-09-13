@@ -58,7 +58,7 @@ export default function AuthCarousel() {
             <div className="mx-auto h-[80%] w-[80%]">
               <Image alt={item.title} src={item.image} placeholder="blur" />
             </div>
-            <div className="space-y-1 pt-4 text-center">
+            <div className="mx-auto w-[70%] space-y-1 text-balance pt-4 text-center">
               <h2 className="text-lg font-semibold">{item.title}</h2>
               <p className="text-sm font-semibold text-white/80">
                 {item.description}
