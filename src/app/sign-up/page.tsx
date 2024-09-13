@@ -6,8 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { SignUpFormFields } from "@/assets/formFields";
 import { FormInput, FormInputErrorText } from "@/components/FormInput";
 import LogoSVG from "@/assets/logo";
-import Image from "next/image";
-import Image1 from "@/assets/doctor-examining-patient-clinic-illustrated.png";
+import AuthCarousel from "@/components/Carousel";
 
 export default function SignUpPage() {
   const {
@@ -85,9 +84,8 @@ export default function SignUpPage() {
             </button>
           </form>
         </div>
-        <div className="bg-indigo-950">
-          <Image alt="" src={Image1} />
-          <LogoSVG />
+        <div className="flex items-center justify-center bg-indigo-950">
+          <AuthCarousel />
         </div>
       </div>
     </main>
